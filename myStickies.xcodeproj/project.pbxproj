@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B4F2278B6A30056F86F /* AppDelegate.swift */; };
-		A9F74B522278B6A30056F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B512278B6A30056F86F /* ViewController.swift */; };
+		A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B512278B6A30056F86F /* StickiesViewController.swift */; };
 		A9F74B552278B6A30056F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F74B532278B6A30056F86F /* Main.storyboard */; };
 		A9F74B572278B6A80056F86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F74B562278B6A80056F86F /* Assets.xcassets */; };
 		A9F74B5A2278B6A80056F86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F74B582278B6A80056F86F /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		A9F74B4C2278B6A30056F86F /* myStickies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStickies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F74B4F2278B6A30056F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9F74B512278B6A30056F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9F74B512278B6A30056F86F /* StickiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickiesViewController.swift; sourceTree = "<group>"; };
 		A9F74B542278B6A30056F86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9F74B562278B6A80056F86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F74B592278B6A80056F86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F74B4F2278B6A30056F86F /* AppDelegate.swift */,
-				A9F74B512278B6A30056F86F /* ViewController.swift */,
+				A9F74B512278B6A30056F86F /* StickiesViewController.swift */,
 				A9F74B532278B6A30056F86F /* Main.storyboard */,
 				A9F74B562278B6A80056F86F /* Assets.xcassets */,
 				A9F74B582278B6A80056F86F /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F74B522278B6A30056F86F /* ViewController.swift in Sources */,
+				A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */,
 				A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JNC3JYBL2V;
 				INFOPLIST_FILE = myStickies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JNC3JYBL2V;
 				INFOPLIST_FILE = myStickies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
