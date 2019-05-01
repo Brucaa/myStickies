@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="7aw-Kx-CLU" id="pnV-Yh-ajp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="MyStickies" id="270-RM-Pt5"/>
+                    <navigationItem key="navigationItem" title="MyStickies" id="270-RM-Pt5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="udk-NE-e1X">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="7aw-Kx-CLU" id="iT4-1L-2Qc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xq4-Wd-ZQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
