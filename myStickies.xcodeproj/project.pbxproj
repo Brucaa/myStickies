@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C95DA1D75E92E31A78C23B /* Pods_myStickies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06212658B29E47B6DDA0CE87 /* Pods_myStickies.framework */; };
 		A92DC6CD227DB1930066DA2A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */; };
 		A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CE227F10460066DA2A /* CategoryViewController.swift */; };
 		A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B4F2278B6A30056F86F /* AppDelegate.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06212658B29E47B6DDA0CE87 /* Pods_myStickies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myStickies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A384041DCA8B8ACC8A5DC4 /* Pods-myStickies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStickies.debug.xcconfig"; path = "Target Support Files/Pods-myStickies/Pods-myStickies.debug.xcconfig"; sourceTree = "<group>"; };
 		A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		A92DC6CE227F10460066DA2A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A9F74B4C2278B6A30056F86F /* myStickies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStickies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +29,7 @@
 		A9F74B562278B6A80056F86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F74B592278B6A80056F86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9F74B5B2278B6A80056F86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F004437275B3A8C689C2FF13 /* Pods-myStickies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStickies.release.xcconfig"; path = "Target Support Files/Pods-myStickies/Pods-myStickies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C95DA1D75E92E31A78C23B /* Pods_myStickies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			children = (
 				A9F74B4E2278B6A30056F86F /* myStickies */,
 				A9F74B4D2278B6A30056F86F /* Products */,
+				FD224D5D1E5CDEF110139F69 /* Pods */,
+				D20144FA150C65FA201D3EE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,24 @@
 			path = myStickies;
 			sourceTree = "<group>";
 		};
+		D20144FA150C65FA201D3EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06212658B29E47B6DDA0CE87 /* Pods_myStickies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD224D5D1E5CDEF110139F69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24A384041DCA8B8ACC8A5DC4 /* Pods-myStickies.debug.xcconfig */,
+				F004437275B3A8C689C2FF13 /* Pods-myStickies.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9F74B5E2278B6A80056F86F /* Build configuration list for PBXNativeTarget "myStickies" */;
 			buildPhases = (
+				AACF938053A664692141BCDD /* [CP] Check Pods Manifest.lock */,
 				A9F74B482278B6A30056F86F /* Sources */,
 				A9F74B492278B6A30056F86F /* Frameworks */,
 				A9F74B4A2278B6A30056F86F /* Resources */,
+				2D5FDB9188F0BED6B4E2B681 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D5FDB9188F0BED6B4E2B681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myStickies/Pods-myStickies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myStickies/Pods-myStickies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AACF938053A664692141BCDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myStickies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9F74B482278B6A30056F86F /* Sources */ = {
@@ -320,6 +396,7 @@
 		};
 		A9F74B5F2278B6A80056F86F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A384041DCA8B8ACC8A5DC4 /* Pods-myStickies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +415,7 @@
 		};
 		A9F74B602278B6A80056F86F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F004437275B3A8C689C2FF13 /* Pods-myStickies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
