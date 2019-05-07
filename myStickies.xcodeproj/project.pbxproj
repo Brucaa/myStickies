@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A92DC6A6227C9F670066DA2A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6A5227C9F670066DA2A /* Item.swift */; };
+		A92DC6CD227DB1930066DA2A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */; };
+		A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CE227F10460066DA2A /* CategoryViewController.swift */; };
 		A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B4F2278B6A30056F86F /* AppDelegate.swift */; };
 		A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B512278B6A30056F86F /* StickiesViewController.swift */; };
 		A9F74B552278B6A30056F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F74B532278B6A30056F86F /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A92DC6A5227C9F670066DA2A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A92DC6CE227F10460066DA2A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A9F74B4C2278B6A30056F86F /* myStickies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStickies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F74B4F2278B6A30056F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F74B512278B6A30056F86F /* StickiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickiesViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		A92DC6A4227C9F3E0066DA2A /* Data model */ = {
 			isa = PBXGroup;
 			children = (
-				A92DC6A5227C9F670066DA2A /* Item.swift */,
+				A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */,
 			);
 			path = "Data model";
 			sourceTree = "<group>";
@@ -48,6 +50,7 @@
 		A92DC6A7227CA0140066DA2A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A92DC6CE227F10460066DA2A /* CategoryViewController.swift */,
 				A9F74B512278B6A30056F86F /* StickiesViewController.swift */,
 			);
 			path = Controllers;
@@ -170,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92DC6A6227C9F670066DA2A /* Item.swift in Sources */,
+				A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */,
+				A92DC6CD227DB1930066DA2A /* DataModel.xcdatamodeld in Sources */,
 				A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */,
 				A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */,
 			);
@@ -372,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A9F74B442278B6A30056F86F /* Project object */;
 }
