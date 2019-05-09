@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11C95DA1D75E92E31A78C23B /* Pods_myStickies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06212658B29E47B6DDA0CE87 /* Pods_myStickies.framework */; };
-		A92DC6CD227DB1930066DA2A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */; };
+		A92904302281C2F7003904A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929042F2281C2F7003904A0 /* Item.swift */; };
+		A92904322281C301003904A0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92904312281C301003904A0 /* Category.swift */; };
 		A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CE227F10460066DA2A /* CategoryViewController.swift */; };
 		A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B4F2278B6A30056F86F /* AppDelegate.swift */; };
 		A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B512278B6A30056F86F /* StickiesViewController.swift */; };
@@ -20,7 +21,8 @@
 /* Begin PBXFileReference section */
 		06212658B29E47B6DDA0CE87 /* Pods_myStickies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myStickies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A384041DCA8B8ACC8A5DC4 /* Pods-myStickies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStickies.debug.xcconfig"; path = "Target Support Files/Pods-myStickies/Pods-myStickies.debug.xcconfig"; sourceTree = "<group>"; };
-		A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A929042F2281C2F7003904A0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A92904312281C301003904A0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A92DC6CE227F10460066DA2A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A9F74B4C2278B6A30056F86F /* myStickies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStickies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F74B4F2278B6A30056F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +49,8 @@
 		A92DC6A4227C9F3E0066DA2A /* Data model */ = {
 			isa = PBXGroup;
 			children = (
-				A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */,
+				A929042F2281C2F7003904A0 /* Item.swift */,
+				A92904312281C301003904A0 /* Category.swift */,
 			);
 			path = "Data model";
 			sourceTree = "<group>";
@@ -123,7 +126,6 @@
 				24A384041DCA8B8ACC8A5DC4 /* Pods-myStickies.debug.xcconfig */,
 				F004437275B3A8C689C2FF13 /* Pods-myStickies.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92904302281C2F7003904A0 /* Item.swift in Sources */,
 				A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */,
-				A92DC6CD227DB1930066DA2A /* DataModel.xcdatamodeld in Sources */,
 				A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */,
 				A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */,
+				A92904322281C301003904A0 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,19 +457,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A92DC6CB227DB1930066DA2A /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */,
-			);
-			currentVersion = A92DC6CC227DB1930066DA2A /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A9F74B442278B6A30056F86F /* Project object */;
 }
