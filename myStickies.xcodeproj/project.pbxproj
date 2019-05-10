@@ -10,6 +10,7 @@
 		11C95DA1D75E92E31A78C23B /* Pods_myStickies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06212658B29E47B6DDA0CE87 /* Pods_myStickies.framework */; };
 		A92904302281C2F7003904A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929042F2281C2F7003904A0 /* Item.swift */; };
 		A92904322281C301003904A0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92904312281C301003904A0 /* Category.swift */; };
+		A929043422849644003904A0 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929043322849644003904A0 /* SwipeTableViewController.swift */; };
 		A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DC6CE227F10460066DA2A /* CategoryViewController.swift */; };
 		A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B4F2278B6A30056F86F /* AppDelegate.swift */; };
 		A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F74B512278B6A30056F86F /* StickiesViewController.swift */; };
@@ -23,6 +24,7 @@
 		24A384041DCA8B8ACC8A5DC4 /* Pods-myStickies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStickies.debug.xcconfig"; path = "Target Support Files/Pods-myStickies/Pods-myStickies.debug.xcconfig"; sourceTree = "<group>"; };
 		A929042F2281C2F7003904A0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A92904312281C301003904A0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A929043322849644003904A0 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		A92DC6CE227F10460066DA2A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A9F74B4C2278B6A30056F86F /* myStickies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStickies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F74B4F2278B6A30056F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				A92DC6CE227F10460066DA2A /* CategoryViewController.swift */,
 				A9F74B512278B6A30056F86F /* StickiesViewController.swift */,
+				A929043322849644003904A0 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-myStickies/Pods-myStickies-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -216,6 +220,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +260,7 @@
 				A92DC6CF227F10460066DA2A /* CategoryViewController.swift in Sources */,
 				A9F74B522278B6A30056F86F /* StickiesViewController.swift in Sources */,
 				A9F74B502278B6A30056F86F /* AppDelegate.swift in Sources */,
+				A929043422849644003904A0 /* SwipeTableViewController.swift in Sources */,
 				A92904322281C301003904A0 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
