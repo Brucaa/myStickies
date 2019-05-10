@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class StickiesViewController: UITableViewController {
+class StickiesViewController: SwipeTableViewController {
     
     var stickiesItems: Results<Item>?
     let realm = try! Realm()
@@ -24,7 +24,6 @@ class StickiesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
@@ -37,7 +36,8 @@ class StickiesViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyStickiesItemCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
         if let item = stickiesItems?[indexPath.row] {
         
         cell.textLabel?.text = item.title
@@ -115,6 +115,20 @@ class StickiesViewController: UITableViewController {
         stickiesItems = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
         
         tableView.reloadData()
+    }
+    
+    //MARK: - Delete Data From Swipe
+    
+    override func updateModel(at indexPath: IndexPath) {
+        if let itemForDeletion = self.stickiesItems?[indexPath.row] {
+            do {
+                try self.realm.write {
+                    self.realm.delete(itemForDeletion)
+                }
+            } catch {
+                print("Error cant delete item, \(error)")
+            }
+        }
     }
 
     
