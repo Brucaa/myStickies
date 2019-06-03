@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class StickiesViewController: SwipeTableViewController {
     
@@ -20,13 +21,43 @@ class StickiesViewController: SwipeTableViewController {
         }
     }
 
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+
+        tableView.separatorStyle = .none
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        title = selectedCategory?.name
+        
+        guard let colorHex = selectedCategory?.colour else { fatalError() }
+            
+        updateNavBar(withHexCode: colorHex)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+
+        updateNavBar(withHexCode: "1D98F6")
+    }
+
+    //MARK: - Nav Bar Setup Methods
+    
+    func updateNavBar(withHexCode colorHexCode: String) {
+        
+        guard let navBar = navigationController?.navigationBar else {fatalError("Navigation controller does not exist.")}
+        guard let navBarColor = UIColor(hexString: colorHexCode) else { fatalError() }
+        
+        searchBar.barTintColor = navBarColor
+        
+        navBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(navBarColor, returnFlat: true)]
+        navBar.tintColor = ContrastColorOf(navBarColor, returnFlat: true)
+        navBar.barTintColor = navBarColor
+    }
     
     //MARK: - TableView Delegate Methods
     
@@ -41,6 +72,13 @@ class StickiesViewController: SwipeTableViewController {
         if let item = stickiesItems?[indexPath.row] {
         
         cell.textLabel?.text = item.title
+            
+        if let colour = UIColor(hexString: selectedCategory!.colour)?.darken(byPercentage: CGFloat(indexPath.row)  / CGFloat(stickiesItems!.count)) {
+            cell.backgroundColor = colour
+            cell.textLabel?.textColor = ContrastColorOf(colour, returnFlat: true)
+            }
+            
+
         
         cell.accessoryType = item.done == true ? .checkmark : .none
         } else {
